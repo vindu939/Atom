@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauth/oauth.iml" filepath="$PROJECT_DIR$/oauth/oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/telegram/telegram.iml" filepath="$PROJECT_DIR$/telegram/telegram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uber.iml" filepath="$PROJECT_DIR$/uber.iml" />
+    </modules>
+  </component>
+</project>

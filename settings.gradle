@@ -1,0 +1,5 @@
+rootProject.name = 'uber'
+include 'core'
+include 'oauth'
+include 'telegram'
+
