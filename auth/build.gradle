@@ -1,0 +1,38 @@
+group 'atom'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter",
+            "org.springframework.boot:spring-boot-starter-web",
+            "com.google.http-client:google-http-client-jackson2:1.22.0",
+            "com.google.oauth-client:google-oauth-client:1.22.0"
+
+    compile project(":urlshortener")
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+configurations.all {
+    exclude module: 'slf4j-log4j12'
+}
